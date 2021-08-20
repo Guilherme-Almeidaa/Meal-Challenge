@@ -1,24 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import PageMeals from './Pages/PageMeals';
+import MealDetails from './Pages/PageMealDetails';
+import Provider from './Provider/Provider';
+import PageSearchMeals from './Pages/PageSearchMeals';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Provider>
+      <Switch>
+      <Route exact path="/" component={PageMeals} />
+      <Route  path="/search" component={PageSearchMeals} />
+      <Route path="/mealDetails/:id" render={(props) => <MealDetails {...props} />} />
+    </Switch>
+    </Provider>
+    </BrowserRouter>
   );
 }
 

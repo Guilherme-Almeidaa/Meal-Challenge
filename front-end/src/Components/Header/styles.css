@@ -1,0 +1,38 @@
+header {
+    margin-top: 0;
+    padding-top: 0;
+    height: 75px;
+    display: flex;
+    background-color: rosybrown;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 300;
+    
+}
+
+.cont-title-page {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: xx-large;
+    z-index: 0;
+}
+
+header a {
+    padding: 20px;
+    text-decoration: none;
+    color:white;
+    font-size: x-large;
+    transition: .5s;
+    overflow-y: hidden;
+    z-index: 330;
+}
+
+header a:hover {
+    color:black;
+    background-color: rgb(207, 191, 191);
+    
+}

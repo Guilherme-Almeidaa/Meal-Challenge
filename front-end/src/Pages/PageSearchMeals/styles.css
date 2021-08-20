@@ -1,0 +1,34 @@
+.meals-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont-input-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-meals-search {
+    padding-top: 120px;
+    z-index: 280;
+}
+
+.input-search {
+    width: 250px;
+    height: 30px;
+    outline: none;
+    font-size: 0.9rem;
+    color:rgba(0,0,0,0.7);
+    font-size: x-large;
+    border:none;
+    padding: 10px;
+    background-color: rgb(207, 191, 191);
+    border-radius: 30px;
+    text-align: center;
+    z-index: 280;
+}
+
+.input-search:focus {
+    border:solid 1px white;
+}

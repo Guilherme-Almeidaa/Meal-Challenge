@@ -1,0 +1,50 @@
+.cont-meals {
+    display: flex;
+    overflow-x: hidden;
+    padding-left: 30px;
+    overflow-y: hidden;
+    transition:all ease .5s;
+}
+
+.title-category {
+    font-size: xx-large;
+    color:white;
+    
+}
+
+.page-cont-meals {
+    overflow-x: hidden;
+}
+
+.cont-meals-row h1 {
+    padding-left: 30px;
+}
+
+.meals-row-left,
+.meals-row-right {
+    position: absolute;
+    height:250px;
+    width: 50px;
+    background-color: rgba(8, 8, 8, 0.281);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    transition:all ease .5s;
+    color:white;
+}
+
+.meals-row-left {
+    left: 0;
+}
+
+.meals-row-right {
+    right: 0;
+}
+
+.cont-meals-row:hover .meals-row-left,
+.cont-meals-row:hover .meals-row-right {
+    opacity: 1;
+}
