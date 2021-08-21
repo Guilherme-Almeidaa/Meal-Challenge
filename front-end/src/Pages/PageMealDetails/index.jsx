@@ -46,10 +46,11 @@ function MealDetails({ match }) {
               </div>
               <section className="cont-info-meal-details">
                 <p>Name: {meal.strMeal}</p>
+                <p>Category: {meal.strCategory}</p>
                 <p>Area: {meal.strArea}</p>
                 <p>Tags: {meal.strTags}</p>
                 <section>
-                  <p>Ingredients</p>
+                  <p>Ingredients:</p>
                   <ul className="list-ingredients">
                     {handlerIngredients(meal)}
                   </ul>

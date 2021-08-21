@@ -13,7 +13,7 @@ function App() {
       <Switch>
       <Route exact path="/" component={PageMeals} />
       <Route  path="/search" component={PageSearchMeals} />
-      <Route path="/mealDetails/:id" render={(props) => <MealDetails {...props} />} />
+      <Route path="/mealdetails/:id" render={(props) => <MealDetails {...props} />} />
     </Switch>
     </Provider>
     </BrowserRouter>

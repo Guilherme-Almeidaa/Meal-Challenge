@@ -5,7 +5,7 @@ import "./styles.css";
 function Meal({ meal }) {
   return (
     <div className="cont-meal-category">
-      <Link to={`/mealDetails/${meal.idMeal}`}>
+      <Link to={`/mealdetails/${meal.idMeal}`}>
         <img
           className="image-meal-category"
           src={meal.strMealThumb}

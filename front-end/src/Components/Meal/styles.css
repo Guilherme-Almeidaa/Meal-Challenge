@@ -1,26 +1,38 @@
 .image-meal-category {
-    width: 250px;
-    margin:4px;
-    transform: scale(0.9);
-    transition: all ease 0.3s;
-    border-radius: 10px;
-    cursor: pointer;
-    border:solid 2px black;
+  width: 250px;
+  margin: 4px;
+  transform: scale(0.9);
+  transition: all ease 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+  border: solid 2px black;
 }
 
 .image-meal-category:hover {
-    transform: scale(1);
-    border:solid 2px white;
+  transform: scale(1);
+  border: solid 2px rgb(95, 95, 189);
 }
 
 .cont-meal-category {
-    height: 370px;
-    width: 250px;
+  height: 370px;
+  width: 250px;
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
 }
 
 .cont-title-meal {
-    text-align: center;
+  text-align: center;
 }
 
+@keyframes slide {
+  from {
+    opacity: 0;
+  }
 
-
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
