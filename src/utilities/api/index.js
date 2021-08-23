@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = process.env.URL || "http://localhost:3001";
+const url = process.env.URL_MEALS || "http://localhost:3001";
 
 export const getMealsByCategory = async (category) => {
   const options = {
