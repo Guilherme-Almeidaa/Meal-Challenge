@@ -21,7 +21,7 @@ function PageMeals() {
         <Loading />
       ) : (
         <div>
-          <Header title="MealsD" />
+          <Header title="Meals" />
           <section className="cont-meals-all">
             {mealsCategories.map((category, index) => (
               <Meal category={category} key={index} />
