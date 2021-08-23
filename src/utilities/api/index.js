@@ -1,11 +1,11 @@
 import axios from "axios";
-
-const url = process.env.URL_MEALS || "http://localhost:3001";
+require("dotenv").config();
+const URL = process.env.REACT_APP_URL_MEALS || "http://localhost:3001";
 
 export const getMealsByCategory = async (category) => {
   const options = {
     method: "GET",
-    url: `${url}/meals/filter`,
+    url: `${URL}/meals/filter`,
     params: { c: category },
   };
 
@@ -15,9 +15,10 @@ export const getMealsByCategory = async (category) => {
 };
 
 export const getAllMealsCategories = async () => {
+  console.log(URL);
   const options = {
     method: "GET",
-    url: `${url}/meals/categories`,
+    url: `${URL}/meals/categories`,
   };
 
   return axios.request(options).then((response) => {
@@ -28,7 +29,7 @@ export const getAllMealsCategories = async () => {
 export const getMealById = async (id) => {
   const options = {
     method: "GET",
-    url: `${url}/meals/${id}`,
+    url: `${URL}/meals/${id}`,
   };
 
   return axios.request(options).then((response) => {
@@ -39,7 +40,7 @@ export const getMealById = async (id) => {
 export const getAllMeals = async (meal) => {
   const options = {
     method: "GET",
-    url: `${url}/meals/search`,
+    url: `${URL}/meals/search`,
     params: { m: meal },
   };
 
