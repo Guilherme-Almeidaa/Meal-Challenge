@@ -1,9 +1,8 @@
 .cont-meals {
   display: flex;
   overflow-x: hidden;
-  padding-left: 30px;
-  padding-right: 30px;
   overflow-y: hidden;
+  padding-right: 30px;
   transition: all ease 0.5s;
 }
 
