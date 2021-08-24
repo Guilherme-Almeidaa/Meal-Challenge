@@ -10,7 +10,7 @@
 
 .image-meal-category:hover {
   transform: scale(1);
-  border: solid 2px rgb(95, 95, 189);
+  border: solid 2px rgb(255, 127, 80);
 }
 
 .cont-meal-category {

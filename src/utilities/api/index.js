@@ -1,11 +1,13 @@
 import axios from "axios";
 require("dotenv").config();
 const URL = process.env.REACT_APP_URL_MEALS || "http://localhost:3001";
+const timeout = 20000;
 
-export const getMealsByCategory = async (category) => {
+export const getMealsByCategory = (category) => {
   const options = {
     method: "GET",
     url: `${URL}/filter`,
+    timeout,
     params: { c: category },
   };
 
@@ -14,10 +16,10 @@ export const getMealsByCategory = async (category) => {
   });
 };
 
-export const getAllMealsCategories = async () => {
-  console.log(URL);
+export const getAllMealsCategories = () => {
   const options = {
     method: "GET",
+    timeout,
     url: `${URL}/categories`,
   };
 
@@ -26,9 +28,10 @@ export const getAllMealsCategories = async () => {
   });
 };
 
-export const getMealById = async (id) => {
+export const getMealById = (id) => {
   const options = {
     method: "GET",
+    timeout,
     url: `${URL}/id/${id}`,
   };
 
@@ -37,10 +40,11 @@ export const getMealById = async (id) => {
   });
 };
 
-export const getAllMeals = async (meal) => {
+export const getAllMeals = (meal) => {
   const options = {
     method: "GET",
     url: `${URL}`,
+    timeout,
     params: { m: meal },
   };
 

@@ -14,7 +14,6 @@ function Category({ category }) {
     if (x > 0) {
       x = 0;
     }
-
     setScrollx(x);
   };
 
@@ -32,6 +31,7 @@ function Category({ category }) {
       setMeals(response);
     });
   }, [category.strCategory]);
+
   return (
     <div className="page-cont-meals">
       <section className="cont-meals-row">
